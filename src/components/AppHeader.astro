@@ -5,7 +5,7 @@ import Container from "./Container.astro";
 ---
 
 <header>
-    <nav class="z-10 w-full absolute ">
+    <nav class="z-10 w-full ">
         <Container>
             <!-- warapper -->
             <div class="flex items-center w-full py-2 gap-6 md:py-4 md:gap-0 relative">
@@ -13,13 +13,13 @@ import Container from "./Container.astro";
                 <div class="flex justify-start items-center flex-auto  w-3/5">
                     <input type="checkbox" aria-hidden="true" name="toggle_nav" id="toggle_nav" class="hidden peer">
                     <!-- logo and hamburger menu -->
-                    <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
+                    <div class="relative z-20 w-full flex justify-between last: lg:w-max md:px-0">
                         <a href="#" aria-label="logo" class="flex space-x-2 items-center">
                             <div aria-hidden="true" class="flex space-x-1">
                                 🚀
                             </div>
                             <span class="text-2xl font-bold text-gray-900 dark:text-white">Astro</span>
-                            <span class="text-2xl font-bold text-orange-400">Mentor</span>
+                            <span class="text-2xl -ml-7 font-bold text-orange-400">Mentor</span>
                         </a>
                         
                         <div class="relative flex items-center lg:hidden max-h-10">
@@ -48,17 +48,17 @@ import Container from "./Container.astro";
                                 </li>
                                 <li>
                                     <a href="#" class="block md:px-4 transition hover:text-primary">
-                                        <span>Content</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block md:px-4 transition hover:text-primary">
-                                        <span>About</span>
+                                        <span>Library </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="block md:px-4 transition hover:text-primary">
                                         <span>Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block md:px-4 transition hover:text-primary">
+                                        <span>Demo</span>
                                     </a>
                                 </li>
                             </ul>
@@ -68,10 +68,10 @@ import Container from "./Container.astro";
 
 
                 <!-- Search  -->
-                <div class="flex justify-end items-center lg:flex-wrap flex-auto w-2/5">
+                <div class="flex justify-end items-center flex-auto w-2/5 invisible lg:visible">
                     <!-- Search bar -->
-                    <div class="relative ">
-                        <input type="text" class="rounded-md bg-transparent border text-white text-sm focus-visible:outline-none focus-visible:bg-white focus-visible:text-black h-9 w-64 px-3 b" value="" placeholder="Search mentors, tools ..." >
+                    <div class="relative flex-1">
+                        <input type="text" class="rounded-md bg-transparent border text-white text-sm focus-visible:outline-none focus-visible:bg-white focus-visible:text-black h-9 w-full px-3 b" value="" placeholder="Search mentors, tools ..." >
                     </div>
 
                     <!-- authentication -->
@@ -80,7 +80,7 @@ import Container from "./Container.astro";
                             href="#"
                             class="relative flex h-9 w-full items-center justify-center px-4 transition sm:w-max"
                             >
-                            <span class="relative text-sm font-semibold text-white hover:text-primary"
+                            <span class="relative text-sm font-semibold dark:text-white text-gray-600 hover:text-primary"
                                 >Sign In</span
                             >
                         </a>
@@ -89,7 +89,7 @@ import Container from "./Container.astro";
                             href="#"
                             class="relative flex h-9 w-full items-center justify-center px-4 rounded-md before:bg-primary border link-card sm:w-max"
                             >
-                            <span class="relative text-sm font-semibold text-white"
+                            <span class="relative text-sm font-semibold dark:text-white text-gray-600"
                                 >Sign up</span
                             >
                         </a>
